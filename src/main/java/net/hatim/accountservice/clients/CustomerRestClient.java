@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "customer-service", url = "https://cloud-customer-service-322412772301.europe-west1.run.app")
+@FeignClient(name = "customer-service", url = "https://cloud-customer-service-322412772301.europe-west1.run.app/api")
 public interface CustomerRestClient {
 
     @GetMapping("/customers/{id}")
