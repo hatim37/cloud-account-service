@@ -24,7 +24,7 @@ WORKDIR /app
 
 COPY --from=build /app/target/*.war app.war
 
-EXPOSE 8081
+EXPOSE 8082
 
 # commande qui sera executé lors du lancement du container
 ENTRYPOINT ["java","-jar","app.war"]
